@@ -28,11 +28,13 @@ const App = () => {
               component={TabNavigator}
               options={{animation: 'slide_from_bottom'}}
             />
+
             <Stack.Screen
               name="Details"
               component={DetailScreen}
               options={{animation: 'slide_from_bottom'}}
             />
+            
             <Stack.Screen
               name="Payment"
               component={PaymentScreen}

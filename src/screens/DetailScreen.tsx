@@ -25,6 +25,9 @@ const DetailScreen = ({navigation, route}: any) => {
     route.params.type == 'Coffee' ? state.CoffeeList : state.BeanList,
   )[route.params.index];
 
+  const [fullDesc, setFullDesc] = useState(false);
+  const [price, setPrice] = useState(itemOfIndex.prices[0]);
+
   //   To return to the home page
   const BackHandler = () => {
     navigation.pop();
@@ -32,6 +35,11 @@ const DetailScreen = ({navigation, route}: any) => {
 
   // To Add To Favorite
   const addToFavoriteList = useStore((state: any) => state.addToFavoriteList);
+  // To Add To Cart
+  const addToCart = useStore((state: any) => state.addToCart);
+  // To Calculate Cart Price
+  const calculateCartPrice = useStore((state: any) => state.calculateCartPrice);
+
   const deleteFromFavoriteList = useStore(
     (state: any) => state.deleteFromFavoriteList,
   );
@@ -40,8 +48,29 @@ const DetailScreen = ({navigation, route}: any) => {
     favorite ? deleteFromFavoriteList(type, id) : addToFavoriteList(type, id);
   };
 
-  const [fullDesc, setFullDesc] = useState(false);
-  const [price, setPrice] = useState(itemOfIndex.prices[0]);
+  const addToCartHandler = ({
+    id,
+    index,
+    name,
+    type,
+    roasted,
+    special_ingredient,
+    imagelink_square,
+    price,
+  }: any) => {
+    addToCart({
+      id,
+      index,
+      name,
+      type,
+      roasted,
+      special_ingredient,
+      imagelink_square,
+      prices: [{...price, quantity: 1}],
+    });
+    calculateCartPrice();
+    navigation.navigate('Cart');
+  };
 
   return (
     <View style={styles.screenContainer}>
@@ -128,7 +157,18 @@ const DetailScreen = ({navigation, route}: any) => {
           <PaymentFooter
             price={price}
             buttonTitle="Add to Cart"
-            buttonPressHandler={() => {}}
+            buttonPressHandler={() => {
+              addToCartHandler({
+                id: itemOfIndex.id,
+                index: itemOfIndex.index,
+                name: itemOfIndex.index,
+                type: itemOfIndex.type,
+                roasted: itemOfIndex.roasted,
+                imagelink_square: itemOfIndex.imagelink_square,
+                special_ingredient: itemOfIndex.special_ingredient,
+                price: itemOfIndex.price,
+              });
+            }}
           />
         </>
       </ScrollView>

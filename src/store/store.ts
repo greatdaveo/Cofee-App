@@ -14,6 +14,8 @@ export const useStore = create(
       FavoriteList: [],
       CartList: [],
       OrderHistoryList: [],
+
+      // To Add To Cart
       addToCart: (cartItem: any) =>
         set(
           produce(state => {
@@ -51,6 +53,7 @@ export const useStore = create(
             }
           }),
         ),
+
       // To calculate cart price
       calculateCartPrice: () =>
         set(
@@ -70,6 +73,8 @@ export const useStore = create(
             state.CartPrice = totalPrice.toFixed(2).toString();
           }),
         ),
+
+      // To Add to Favorite List
       addToFavoriteList: (type: string, id: string) =>
         set(
           produce(state => {
@@ -96,6 +101,8 @@ export const useStore = create(
             }
           }),
         ),
+
+      // To Delete Favorite List
       deleteFromFavoriteList: (type: string, id: string) =>
         set(
           produce(state => {

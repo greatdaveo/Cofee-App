@@ -99,10 +99,10 @@ const TabNavigator = () => {
 
 const styles = StyleSheet.create({
   tabBarStyle: {
-    // flex: 1,
+    flex: 1,
     height: 80,
     paddingBottom: 0,
-    marginBottom: 0,
+    marginBottom: 1,
     position: 'absolute',
     backgroundColor: COLORS.primaryBlackRGBA,
     borderTopWidth: 0,
