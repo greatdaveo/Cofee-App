@@ -120,12 +120,11 @@ const HomeScreen = ({navigation}: any) => {
       prices,
     });
     calculateCartPrice();
-    ToastAndroid.showWithGravity(
-      `${name} is Added to Cart!`,
-      ToastAndroid.SHORT,
-      ToastAndroid.CENTER,
-    );
-    
+    // ToastAndroid.showWithGravity(
+    //   `${name} is Added to Cart!`,
+    //   ToastAndroid.SHORT,
+    //   ToastAndroid.CENTER,
+    // );
   };
 
   return (
