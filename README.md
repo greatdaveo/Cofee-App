@@ -1,6 +1,28 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+This is a [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli). 
 
-# Getting Started
+## A beautiful Coffee App using React Native with the react-native-community CLI. 
+
+This project demonstrates my skills in mobile app development, user interface design, state management, and TypeScript programming. It has helped me gain experience in creating a user-friendly mobile application using React Native.
+
+## Screenshots
+<p>
+    <img src="https://github.com/greatdaveo/Coffee-App/assets/100958002/281a7e1e-af84-4431-9c9a-7067272d48e0" alt="Home Screen" width="200px" height="auto" hspace="20"/>
+    <img src="https://github.com/greatdaveo/Coffee-App/assets/100958002/255068c0-a3dc-4aa1-9d38-0a8a7b60ebb9" alt="Cart Screen" width="200px" height="auto" hspace="20"/>
+    <img src="https://github.com/greatdaveo/Coffee-App/assets/100958002/c0f6cf8f-6ab1-46d3-b873-2c4930a840ea" alt="Favorites Screen" width="200px" height="auto" hspace="20"/>
+</p>
+
+<p>
+    <img src="https://github.com/greatdaveo/Coffee-App/assets/100958002/288d5ff5-a6af-4e4a-b13c-a7da4b41772c" alt="Payment Screen" width="200px" height="auto" hspace="20"/>
+    <img src="https://github.com/greatdaveo/Coffee-App/assets/100958002/7daf4a2e-6065-4484-9248-a89f7efeff32" alt="Successful Payment Animation" width="200px" height="auto" hspace="20"/>
+    <img src="https://github.com/greatdaveo/Coffee-App/assets/100958002/fdf4c604-d8fd-41ed-911c-4e70d473b58e" alt="Order History Screen" width="200px" height="auto" hspace="20"/>
+</p>
+
+ <!-- ![EmptyCartScreen](https://github.com/greatdaveo/Coffee-App/assets/100958002/c3a403fa-e6a4-445a-96e4-1e1c592815d1) -->
+ 
+ <!-- USAGE -->
+
+
+# Usage:
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
@@ -57,23 +79,4 @@ Now that you have successfully run the app, let's modify it.
 
 ## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+You've successfully run the Coffee App. :partying_face:
